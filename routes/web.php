@@ -12,3 +12,5 @@ Route::get('/', [HomeController::class, 'index']) ->name('index');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
     
+// for the contact list
+Route::get('/contact-list', [HomeController::class, 'contactList'])->name('contact-list');
